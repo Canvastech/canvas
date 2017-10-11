@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="webApp">
+	<head>
+    	<!-- Required meta tags -->
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    	<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+		<!-- Custom Canvas Tech CSS -->
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+		<script src="node_modules/angular/angular.js"></script>
+		<script src="node_modules/angular-route/angular-route.min.js"></script>
+		<script src="js/modules/baseRoute.js"></script>
+		<!--<script src="js/modules/citrus.js"></script>-->
+		<script src="js/app.js"></script>
+		<script src="routes.js"></script>
+
+		<!-- ALL CONTOLLERS -->
+
+		<script src="js/controllers/splash.js"></script>
+	</head>
+  	<body>
+
+  	<!-- Top Bar -->
+  	<div class="flex-container">
+  		<nav class="navbar navbar-toggleable-md fixed-top navbar-light bg-faded">
+  			<div class="container">
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#">The Business Center</a>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    	<ul class="navbar-nav mr-auto">
+			    		<li class="nav-item active">
+			        		<a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+				        </li>
+				        <li class="nav-item">
+				        	<a class="nav-link" href="#">Internships</a>
+				        </li>
+				        <li class="nav-item">
+				        	<a class="nav-link" href="#">Program</a>
+				        </li>
+			    	</ul>
+			    	<form class="form-inline my-2 my-lg-0">
+			        	<input class="form-control mr-sm-2" type="text" placeholder="Search">
+			        	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			    	</form>
+			    </div>
+			</div>
+		</nav>
+  	</div>
+
+	<!-- Body -->
+	<div class="container" style="margin-top: 100px;">
+		<div class="row">
+			<div class="col-3">
+				<ul class="nav flex-column">
+					<li class="nav-item">
+					    <form class="form-group">
+							<input class="form-control" type="text" placeholder="Search..." id="example-text-input">
+					    </form>
+					</li>
+				</ul>
+
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="nav-item">
+				    	<a class="nav-link active" data-toggle="tab" href="#eitc" role="tab">EITC</a>
+				    </li>
+				  	<li class="nav-item">
+				    	<a class="nav-link" data-toggle="tab" href="#grants" role="tab">Grants</a>
+				  	</li>
+				  	<li class="nav-item">
+				    	<a class="nav-link" data-toggle="tab" href="#policies" role="tab">Policies</a>
+				  	</li>
+				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane fade show custom-tab-pane active" id="eitc" role="tabpanel">
+						By using the Educational Improvement Tax Credit (EITC), you can help our Youth Entrepreneurs. For more information about giving to The Business Center, please contact Pamela Rich-Wheeler at (215) 247-2473-2. For more information about EITC <a href="http://thebizctr.com/files/EITC/EITC_LOR_2014_Corporate.pdf" target="_blank">click here.</a>
+					</div>
+					<div class="tab-pane fade custom-tab-pane" id="grants" role="tabpanel">
+						A limited number of need-based scholarships are available for many of our programs. Please download an <a href="http://thebizctr.com/files/scholly/TBC_Scholarship_App.pdf" target="_blank">application</a> and mail it to The Business Center, 7500 Germantown Ave. Elders Hall-Suite 113, Philadelphia, PA 19119
+					</div>
+					<div class="tab-pane fade custom-tab-pane" id="policies" role="tabpanel">
+						<a href="http://thebizctr.com/files/Policies_and_Privacy.doc" target="_blank">Click here</a> to read about our refund and cancellation policies and our commitment to protect your privacy.
+					</div>
+				</div>
+
+				<a class="twitter-timeline" href="https://twitter.com/thebizctr">Tweets by thebizctr</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+
+
+			<!-- Template Space -->
+			
+			<div class="col-9" style="border:1px solid green;" ng-view>
+				
+			</div>
+
+
+
+
+		</div>
+		
+	</div>
+
+
+
+
+	    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		
+	</body>
+</html>
