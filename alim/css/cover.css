@@ -27,7 +27,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-image: url("../assets/img/one.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -49,6 +48,8 @@ body {
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
+  background-image: url("../assets/img/one.jpg");
+  background-size: cover;
 }
 .cover-container {
   margin-right: auto;
