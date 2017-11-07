@@ -35,6 +35,12 @@
 
       }
 
+      .lead{
+
+        font-size: 11pt;
+
+      }
+
       .custom2{
 
         background-image: url('assets/img/four.jpg')!important;
@@ -74,22 +80,22 @@
               <h3 class="masthead-brand">LiMM</h3>
               <nav class="nav nav-masthead">
                 <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" id="navToAbout" href="#">About</a>
-                <a class="nav-link" href="#">Music</a>
-                <a class="nav-link" href="#">Videos</a>
+                <a class="nav-link" onclick="lovelyScroll('about')" href="#">About</a>
+                <a class="nav-link" onclick="lovelyScroll('music')" href="#">Music</a>
+                <a class="nav-link" onclick="lovelyScroll('videos')" href="#">Videos</a>
                 <!--<a class="nav-link" href="#">Social</a>-->
                 <a class="nav-link" href="#">Merch</a>
-                <a class="nav-link" href="#">Media</a>
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" onclick="lovelyScroll('media')" href="#">Media</a>
+                <a class="nav-link" onclick="lovelyScroll('contact')" href="#">Contact</a>
               </nav>
             </div>
           </div>
 
           <div class="inner cover">
             <h1 class="cover-heading">LiMM</h1>
-            <p class="lead" style="color:white;"><a href="https://soundcloud.com/worldoflimm/2-am-ft-superstarb" target="_blank">#OnALonelyNight</a></p>
+            <p class="lead" style="color:white;font-size: 1.25rem!important"><a href="https://soundcloud.com/worldoflimm/2-am-ft-superstarb" target="_blank">#OnALonelyNight</a></p>
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+              <a href="#" onclick="lovelyScroll(about)" class="btn btn-lg btn-secondary">Learn more</a>
             </p>
           </div>
 
@@ -142,10 +148,10 @@
 
       <br><br><br><br>
 
-      <div class="row featurette">
+      <div class="row featurette" id="music">
         <div class="col-md-6 ">
-          <h2 class="featurette-heading" style="margin-top: 70px">Lessons You Should Learn<br><span class="text-muted">11/21/2017</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading" style="margin-top: 70px;">Lessons You Should Learn<br><span class="text-muted">11/21/2017</span></h2>
+          <p class="lead" style="font-size: 12pt;">This cohesive 8 track project, takes the time to illuminate key components that are required in any relationship. With Hit singles like Lost & Found and All Day, LiMM uses a great mix of melodies and rap to help illustrate exactly what characteristics are crucial in a relationship. A more confident and assertive sound is present in this Extended Play record, and it aids the artist in getting his point across clearly and smoothly.</p>
         </div>
         <div class="col-md-6">
           <img class="featurette-image img-fluid mx-auto" src="assets/img/lysl.jpg" data-src="assets/img/three.jpg" alt="Generic placeholder image">
@@ -156,8 +162,8 @@
 
       <div class="row featurette">
         <div class="col-md-6 order-md-2">
-          <h2 class="featurette-heading">The Effect [demo]<br><span class="text-muted">(date)</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading" style="margin-top:.75em!important">The Effect [demo]<br><span class="text-muted">(date)</span></h2>
+          <p class="lead">Limm’s The Effect [demo] is a project that metaphorically pens the first chapter in a successful music career. Songs such as Driving at Night and Been Thru Things are able to hone an R&B tone that separates Limm from the pack of upcoming artists and cements him as a name to remember for years to come. Songs off of the EP have streamed over 50K listens on SoundCloud and are still climbing. HipHopCanada describes The Effect [demo] as “A feel-good style of rap that feels as though we’re listening to the inner thoughts of the emcee.” and NxG describes it as “A six track journey saturated with emotional revelations and addictive melodies serving to validate Limm as a talented and upcoming artist.” When asked about it, Limm explains that throughout the project, “Each song grows on you until you are totally immersed and feeling the effect.”</p>
         </div>
         <div class="col-md-6 order-md-1">
           <a href="https://soundcloud.com/worldoflimm/sets/the-effect-demo" target="_blank"><img class="featurette-image img-fluid mx-auto" src="assets/img/effect.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></a>
@@ -168,8 +174,8 @@
 
       <div class="row featurette">
         <div class="col-md-6">
-          <h2 class="featurette-heading">2 AM<br><span class="text-muted">09/16/2016</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">2 AM<br><span class="text-muted">9/22/16</span></h2>
+          <p class="lead" style="font-size: 14pt">LiMM’s debut single and one of his most popular track to date. 2 AM shares some of LiMM's most personal, late night reflections and confessions.</p>
         </div>
         <div class="col-md-6">
           <a href="https://soundcloud.com/worldoflimm/2-am-ft-superstarb" target="_blank"><img class="featurette-image img-fluid mx-auto" src="assets/img/2am.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></a>
@@ -179,27 +185,44 @@
 
     <br><br><br>
 
-      <div class="custom-banner custom2">
+      <div class="custom-banner custom2" id="videos">
           <h1 class="cover-heading"><iframe width="746" height="440" src="https://www.youtube.com/embed/rxBeTCrPy88" frameborder="0" allowfullscreen></iframe></h1>
       </div>
-    <div class="album text-muted">
+    <div class="album text-muted" style="background-color: #fff" id="media">
         <div class="container" style="margin-top: 1em">
           <div class="row">
-            <div class="card">
-              <img data-src="holder.js/100px280?theme=thumb" alt="Thumbnail [100%x280]" style="height: 280px; width: 100%; display: block;" src="http://assets.wennermedia.com/rollingstone/img/social/default-rollingstone.jpg" data-holder-rendered="true">
-              <p class="card-text">"LiMM's music is cutting edge and different"</p>
-            </div>
-            <div class="card">
-              <img data-src="holder.js/100px280?theme=thumb" alt="Thumbnail [100%x280]" style="height: 280px; width: 100%; display: block;" src="http://assets.wennermedia.com/rollingstone/img/social/default-rollingstone.jpg" data-holder-rendered="true">
-              <p class="card-text">"LiMM's music is cutting edge and different"</p>
-            </div>
-            <div class="card">
-              <img data-src="holder.js/100px280?theme=thumb" alt="Thumbnail [100%x280]" style="height: 280px; width: 100%; display: block;" src="http://assets.wennermedia.com/rollingstone/img/social/default-rollingstone.jpg" data-holder-rendered="true">
-              <p class="card-text">"LiMM's music is cutting edge and different"</p>
-            </div>
+            <a class="card" href="https://www.illanoize.co/home/limm-shake-it" target="_blank">
+              <img data-src="holder.js/100px280?theme=thumb" alt="Thumbnail [100%x280]" style="height: 280px; width: 100%; display: block;" src="https://www.illanoize.co/uploads/7/4/4/5/74456423/published/illanoize-black_9.png?1507388630" data-holder-rendered="true">
+              <p class="card-text">"LiMM goes crazy on the playful, beat talking about just accepting where he is and dealing with it"</p>
+            </a>
+            <a class="card" href="http://www.hiphopcanada.com/2016/11/winnipeg-raised-emcee-limm-shares-his-late-night-thoughts-on-2-am-featuring-superstarb/" target="_blank">
+              <img data-src="holder.js/100px280?theme=thumb" alt="Thumbnail [100%x280]" style="height: 280px; width: 100%; display: block;" src="https://yt3.ggpht.com/-Fq_UFL0gYvI/AAAAAAAAAAI/AAAAAAAAAAA/h7h9PcCWpRM/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" data-holder-rendered="true">
+              <p class="card-text">"It doesn’t seem like LiMM has lost his grind through the relocation process."</p>
+            </a>
+            <a class="card" href="http://www.thewritefashion.com/youngest-in-charge/2017/5/11/world-of-limm-alim-karim-kamara" target="_blank">
+              <img data-src="holder.js/100px280?theme=thumb" alt="Thumbnail [100%x280]" style="height: 280px; width: 100%; display: block;" src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/11111622_1018353248176588_3893822509354212807_n.jpg?oh=7fe0e0f4fa1a26f8edaab7190e985284&oe=5A6AF634" data-holder-rendered="true">
+              <p class="card-text">"The Canadian emcee's worldly background can also be heard throughout his music "</p>
+            </a>
           </div>
-
+          <hr class="featurette-divider">
         </div>
+     </div>
+
+
+
+        <div class="container marketing">
+          <div class="row" id="contact">
+            <div class="col-lg-12">
+              <i class="fa fa-envelope-o fa-1" style="font-size: 8em;color: #FF4081; padding-bottom: 10px"></i>
+              <!--<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">-->
+              <h2 class="other-heading">Contact</h2><br>
+              <p>For bookings and other inquiries, please reach out to <i>email</i></p>
+              <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+          
+        </div>
+
 
       <!--<div class="row">
         <div class="col-md-6 offset-md-3">
@@ -228,19 +251,23 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
     <script type="text/javascript">
+
+
+            function lovelyScroll(id){
+
+              $('html, body').animate({
+                  scrollTop: $("#"+ id).offset().top
+              }, 700);
+
+            }
             
-            $("#navToAbout").click(function() {
-              console.log("i was clicked");
-              $('body').scrollTo("#about");
-          });
 
           </script>
   </body>
