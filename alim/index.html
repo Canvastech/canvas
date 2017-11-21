@@ -50,6 +50,38 @@
 
       }
 
+      .custom3{
+
+        background-image: url('assets/img/six.jpg')!important;
+        background-size: cover;
+        background-position: center 65%;
+        height: 700px;
+
+      }
+
+      .custom4{
+
+        background-image: url('assets/img/one.jpg')!important;
+        background-size: cover;
+        background-position: center 65%;
+        height: 900px;
+
+      }
+
+      .storytext{
+
+        font-size: 1.25em!important;
+        font-weight: 200 !important;
+
+      }
+
+      .custom-inner-3{
+
+        display: table-cell!important;
+        vertical-align: middle;
+
+      }
+
       .featurette-heading > span{
 
         font-size: 29px;
@@ -60,6 +92,45 @@
       .custom-banner > h1 {
         display: table-cell;
 
+        vertical-align: middle;
+
+      }
+
+      footer{
+
+        padding-bottom: 1em!important;
+
+      }
+
+      .social-row{
+
+        padding: 15px;
+        margin-bottom: 0;
+        margin: auto;
+        border: 1px solid blue;
+
+      }
+
+      .social-row > a {
+        margin: auto;
+        height: 45px;
+        width: 45px;
+        display: table;
+        background-color: #FF4081;
+        border-radius: 50%;
+        text-decoration: none;
+      }
+
+      .social-row > a > i {
+
+        display: table-cell;
+        vertical-align: middle;
+
+      }
+
+      .social-item{
+
+        display: table-cell;
         vertical-align: middle;
 
       }
@@ -81,6 +152,7 @@
               <nav class="nav nav-masthead">
                 <a class="nav-link active" href="#">Home</a>
                 <a class="nav-link" onclick="lovelyScroll('about')" href="#">About</a>
+                <a class="nav-link" onclick="lovelyScroll('journey')" href="#">My Journey</a>
                 <a class="nav-link" onclick="lovelyScroll('music')" href="#">Music</a>
                 <a class="nav-link" onclick="lovelyScroll('videos')" href="#">Videos</a>
                 <!--<a class="nav-link" href="#">Social</a>-->
@@ -95,7 +167,7 @@
             <h1 class="cover-heading">LiMM</h1>
             <p class="lead" style="color:white;font-size: 1.25rem!important"><a href="https://soundcloud.com/worldoflimm/2-am-ft-superstarb" target="_blank">#OnALonelyNight</a></p>
             <p class="lead">
-              <a href="#" onclick="lovelyScroll(about)" class="btn btn-lg btn-secondary">Learn more</a>
+              <a href="#" onclick="lovelyScroll('about')" class="btn btn-lg btn-secondary">Learn more</a>
             </p>
           </div>
 
@@ -104,7 +176,6 @@
               <!--<p>Cover template for <a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>-->
             </div>
           </div>
-
         </div>
 
       </div>
@@ -116,30 +187,16 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row" style="margin-top: 70px" id="about">
-        <div class="col-lg-6">
-          <i class="fa fa-book fa-5" style="font-size: 8em;color: #FF4081; padding-bottom: 10px"></i>
-          <!--<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">-->
-          <h2 class="other-heading">History</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus tempor consectetur. Pellentesque et condimentum mauris. Fusce diam sapien, tincidunt pretium arcu at, ullamcorper lobortis enim. Nulla facilisi. In hac habitasse platea dictumst. In diam dui, fringilla ut dolor et, facilisis accumsan leo. Aliquam vel lobortis nulla. Sed interdum ac ex hendrerit placerat. Praesent blandit velit risus, eget viverra nisi varius in. Suspendisse pulvinar quam magna, sit amet pharetra urna elementum sed. Suspendisse bibendum lacus euismod, consectetur odio blandit, viverra neque.</p>
+        <div class="col-lg-12">
+          <p class="storytext" style="padding-right: 100px;padding-left: 100px;text-align: center;">Imagine that you come through a narrow passageway and enter into a crowded South Philly house. You shuffle your way through the living room, past your Pipa, past the pit bull to a creaky set of stairs that leads into a basement lit by neon lights. Down here, there is an assortment of hi-hats and synthesizer melodies, pounding out the rhythm of my life. <br><br><b>I want you to get comfortable - we are going to be staying her for a while. </b><br><br>Here, you get to watch me in my rawest form. My mind is constantly racing and I’m constantly working on new material, all while perfecting the old, and simultaneously planning out shows and entertaining my friends. I am always working on advancing my musical career. Oh, did I mention: I do all of this while being a full time student Communications Studies Major and English Minor at St. Joseph’s University. </p>
           <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-6">
-          <i class="fa fa-music fa-5" style="font-size: 8em;color: #FF4081; padding-bottom: 10px"></i>
-          <h2 class="other-heading">Musical Career</h2>
-          <p>Fusce gravida ultricies mauris luctus convallis. Suspendisse posuere mi eu libero viverra, eget consequat augue ornare. Vestibulum varius urna ut tincidunt pharetra. Vestibulum ultricies eu mauris nec fermentum. Fusce nec purus suscipit, condimentum nunc id, porta mi. Pellentesque a nibh at ligula mollis sodales. Etiam ultrices metus lectus, at commodo libero maximus et. Suspendisse tincidunt eu augue quis aliquet. Praesent dolor urna, ultricies quis commodo vitae, feugiat eu ipsum.</p>
-        </div><!-- /.col-lg-4 -->
-        <!--<div class="col-lg-4">
-          <i class="fa fa-book fa-5" style="font-size: 8em;color: #5a5a5a"></i>
-          <h2 class="other-heading">Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
     </div>
 <br><br><br><br>
       <div class="custom-banner">
-          <h1 class="cover-heading">"A new sound, a new way"</h1>
+          <h1 class="cover-heading">Welcome to my world</h1>
       </div>
 
 
@@ -148,16 +205,52 @@
 
       <br><br><br><br>
 
-      <div class="row featurette" id="music">
+
+      <div class="row featurette" id="journey">
         <div class="col-md-6 ">
-          <h2 class="featurette-heading" style="margin-top: 70px;">Lessons You Should Learn<br><span class="text-muted">11/21/2017</span></h2>
-          <p class="lead" style="font-size: 12pt;">This cohesive 8 track project, takes the time to illuminate key components that are required in any relationship. With Hit singles like Lost & Found and All Day, LiMM uses a great mix of melodies and rap to help illustrate exactly what characteristics are crucial in a relationship. A more confident and assertive sound is present in this Extended Play record, and it aids the artist in getting his point across clearly and smoothly.</p>
+          <h2 class="featurette-heading" style="margin-top: 70px;">My Roots<br></h2><!-- DO APPLE MUSIC -->
+          <p class="lead storytext"> My roots track back to the city of Freetown, Sierra Leone, located in the western part of Africa. I moved to Winnipeg, Manitoba around the age of 2 and I lived there up until I was about 12. Then I moved to a small suburban area just outside of Philadelphia, Pennsylvania. I moved to the Drexel Hill of the Delaware County. </p>
         </div>
         <div class="col-md-6">
-          <img class="featurette-image img-fluid mx-auto" src="assets/img/lysl.jpg" data-src="assets/img/three.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto" alt="Sierra Leone Image">
         </div>
       </div>
 
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-6">
+          <img class="featurette-image img-fluid mx-auto" alt="Sierra Leone Image" src="assets/img/damian.jpg" data-src="assets/img/damian.jpg">
+        </div>
+        <div class="col-md-6 ">
+          <h2 class="featurette-heading" style="margin-top: 70px;">How I Found Music<br></h2><!-- DO APPLE MUSIC -->
+          <p class="lead storytext"> Now, I was never really into music until I met my friend Damian Mancini (he’s a main reason why I’m doing this today), although I did love to sing. I was a member to a handful of choirs growing up. But as my friendship with Damian grew stronger, he began introducing me to music - something he was very passionate about and was interested in himself. He had been rapping for a few years at that point, but he was still trying to find his sound and learn everything there was to know. He was mixing/mastering all his recordings, along with writing his own lyrics of course.</p>
+          <p class="storytext">
+            I had him over one day and he brought his equipment along. He showed me how he worked it all and it was pretty cool. I got to free styling with him and eventually he convinced me to do the same thing while being recorded. I was nervous at first but it I was willing to give it a shot. That’s how “Halftime Freestyle” came to be. I showed that to a few people and they were very supportive. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="custom-banner custom2">
+      <h1 class="cover-heading" style="padding-right: 50px;padding-left: 50px">I started taking my music serious in the beginning of my Freshman year at St. Joe’s.</h1>
+    </div>
+
+    <div class="container marketing">
+
+      <br><br><br><br>
+
+       <div class="row featurette" id="music">
+        <div class="col-md-6">
+          <h2 class="featurette-heading">2 AM<br><span class="text-muted">9/22/16</span></h2>
+          <p class="lead" style="font-size: 14pt">LiMM’s debut single and one of his most popular track to date. 2 AM shares some of LiMM's most personal, late night reflections and confessions.</p>
+        </div>
+        <div class="col-md-6">
+          <a href="https://soundcloud.com/worldoflimm/2-am-ft-superstarb" target="_blank"><img class="featurette-image img-fluid mx-auto" src="assets/img/2am.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></a>
+        </div>
+      </div>
       <hr class="featurette-divider">
 
       <div class="row featurette">
@@ -173,21 +266,26 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-6">
-          <h2 class="featurette-heading">2 AM<br><span class="text-muted">9/22/16</span></h2>
-          <p class="lead" style="font-size: 14pt">LiMM’s debut single and one of his most popular track to date. 2 AM shares some of LiMM's most personal, late night reflections and confessions.</p>
+        <div class="col-md-6 ">
+          <h2 class="featurette-heading" style="margin-top: 70px;">Lessons You Should Learn<br><span class="text-muted">11/21/2017</span></h2><!-- DO APPLE MUSIC -->
+          <p class="lead" style="font-size: 12pt;">This cohesive 8 track project, takes the time to illuminate key components that are required in any relationship. With Hit singles like Lost & Found and All Day, LiMM uses a great mix of melodies and rap to help illustrate exactly what characteristics are crucial in a relationship. A more confident and assertive sound is present in this Extended Play record, and it aids the artist in getting his point across clearly and smoothly.</p>
         </div>
         <div class="col-md-6">
-          <a href="https://soundcloud.com/worldoflimm/2-am-ft-superstarb" target="_blank"><img class="featurette-image img-fluid mx-auto" src="assets/img/2am.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></a>
+          <img class="featurette-image img-fluid mx-auto" src="assets/img/lysl.jpg" data-src="assets/img/three.jpg" alt="Generic placeholder image">
         </div>
       </div>
+
     </div>
 
     <br><br><br>
 
-      <div class="custom-banner custom2" id="videos">
+    <div class="custom-banner custom4">
+      <h1 class="cover-heading" style="padding-right: 50px;padding-left: 50px">I have come so far and have so much farther to go</h1>
+    </div>
+
+      <!--<div class="custom-banner custom2" id="videos">
           <h1 class="cover-heading"><iframe width="746" height="440" src="https://www.youtube.com/embed/rxBeTCrPy88" frameborder="0" allowfullscreen></iframe></h1>
-      </div>
+      </div>-->
     <div class="album text-muted" style="background-color: #fff" id="media">
         <div class="container" style="margin-top: 1em">
           <div class="row">
@@ -203,24 +301,23 @@
               <img data-src="holder.js/100px280?theme=thumb" alt="Thumbnail [100%x280]" style="height: 280px; width: 100%; display: block;" src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/11111622_1018353248176588_3893822509354212807_n.jpg?oh=7fe0e0f4fa1a26f8edaab7190e985284&oe=5A6AF634" data-holder-rendered="true">
               <p class="card-text">"The Canadian emcee's worldly background can also be heard throughout his music "</p>
             </a>
-          </div>
-          <hr class="featurette-divider">
+          </div><br>
         </div>
      </div>
 
 
 
-        <div class="container marketing">
-          <div class="row" id="contact">
-            <div class="col-lg-12">
-              <i class="fa fa-envelope-o fa-1" style="font-size: 8em;color: #FF4081; padding-bottom: 10px"></i>
-              <!--<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">-->
-              <h2 class="other-heading">Contact</h2><br>
-              <p>For bookings and other inquiries, please reach out to <i>email</i></p>
-              <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
-            </div><!-- /.col-lg-4 -->
-          </div><!-- /.row -->
-          
+        <div class="custom-banner custom3">
+          <div class="container marketing custom-inner-3">
+            <div class="row" id="contact">
+              <div class="col-lg-12">
+                <i class="fa fa-envelope-o fa-1" style="font-size: 8em;color: #fff; padding-bottom: 10px"></i>
+                <h2 class="cover-heading" style="color:white">Contact</h2><br>
+                <p class="lead" style="color:white;font-size: 1.25rem!important">For bookings and other inquiries, please reach out to <i><a href="mailto:worldoflimm@gmail.com" >worldoflimm@gmail.com</a></i></p>
+                <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+          </div>
         </div>
 
 
@@ -242,7 +339,22 @@
       <footer>
         <p class="float-right"><a href="#">Back to top</a></p>
         <p>&copy; 2017 Canvas Tech, Inc. </p>
+        <br>
+        <!--<div class="social-row">
+          <a href="https://www.instagram.com/worldoflimm" target="_blank"><i style="font-size: 1.5em" class="fa fa-instagram"></i></a>
+          <a href="https://www.instagram.com/worldoflimm" target="_blank"><i style="font-size: 1.5em" class="fa fa-instagram"></i></a>
+          <a href="https://www.instagram.com/worldoflimm" target="_blank"><i style="font-size: 1.5em" class="fa fa-instagram"></i></a>
+          <a href="https://www.instagram.com/worldoflimm" target="_blank"><i style="font-size: 1.5em" class="fa fa-instagram"></i></a>
+          <a href="https://www.instagram.com/worldoflimm" target="_blank"><i style="font-size: 1.5em" class="fa fa-instagram"></i></a>
+          <a href="https://www.instagram.com/worldoflimm" target="_blank"><i style="font-size: 1.5em" class="fa fa-instagram"></i></a>
+          <a href="https://www.instagram.com/worldoflimm" target="_blank"><i style="font-size: 1.5em" class="fa fa-instagram"></i></a>
+        </div>-->
+        
       </footer>
+
+
+
+
     </div>
     </div>
 
@@ -263,7 +375,7 @@
             function lovelyScroll(id){
 
               $('html, body').animate({
-                  scrollTop: $("#"+ id).offset().top
+                  scrollTop: $("#"+ id).offset().top - 90
               }, 700);
 
             }
